@@ -28,6 +28,8 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
+  console.log("App Loaded!");
+
   // The token only ever leaves the browser as a header to our own API route,
   // which forwards it to GitHub. It is never put in a URL or logged.
   const authFetch = useCallback(
